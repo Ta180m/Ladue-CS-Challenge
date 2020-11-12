@@ -8,6 +8,9 @@ unixkcd: some of them are really tedious
 
 BigChonk: heres a very tedious problem
 
-BigChonk: 
+BigChonk:        /  0          if n = 1
+          f(n) = {  f(3n+1)+1  if n is odd
+                 \  f(n/2)+1   if n is even
+          Find f(27)
 
 END MESSAGES

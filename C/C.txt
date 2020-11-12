@@ -1,7 +1,18 @@
 BEGIN MESSAGES
 
-unixkcd: here's another ACSL problem
+xuxinwen: is the other acsl topic looking at pseudocode
 
-unixkcd: 
+BigChonk: yeah
+
+unixkcd: here's an ACSL problem
+
+unixkcd: a = 1: b = 2: c = 3: d = 4: e = 4: f = 6
+         if (d / b) < (f / a) then d = d / b
+         a = f ^ b / c ^ (d / b)
+         if (a <= f) && (b > e) then a = f else b = e
+         if abs(c - f) != int(f / c) then c = f / c else f = f / c
+         if (a = = b) | | (c = = d) then a = a + b
+         c = c + d
+         output (b * c) * (f + d) / a / 2 * d - c + e ^ (b - 2 * d)
 
 END MESSAGES
