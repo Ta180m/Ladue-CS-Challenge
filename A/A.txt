@@ -1,0 +1,11 @@
+BEGIN MESSAGES
+
+BigChonk: isnt ACSL coming up soon?
+
+xuxinwen: yeah we should start preparing for it soon
+
+unixkcd: here's a sample problem
+
+unixkcd: Find the number of integers between 1 and 64 inclusive that have more ones than zeros in their binary representation.
+
+END MESSAGES
