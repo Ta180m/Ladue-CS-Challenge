@@ -1,1 +1,1 @@
-H: X Y means the Xth largest permuation of [1,2...Y], 1-indexed
+H: X Y means the Xth lexicographically largest permuation of [1,2...Y]
