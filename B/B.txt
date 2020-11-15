@@ -1,10 +1,10 @@
 BEGIN MESSAGES
 
-xuxinwen: what are the topics for ACSL
+xuxinwen: what are the topics for acsl
 
-BigChonk: recursive functions
+BigChonk: on of the topics is recursive functions
 
-unixkcd: some of them are really tedious
+unixkcd: some of those problems are really tedious
 
 BigChonk: heres a very tedious problem
 

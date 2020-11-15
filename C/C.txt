@@ -4,7 +4,7 @@ xuxinwen: is the other acsl topic looking at pseudocode
 
 BigChonk: yeah
 
-unixkcd: here's an ACSL problem
+unixkcd: heres an acsl problem
 
 unixkcd: a = 1: b = 2: c = 3: d = 4: e = 4: f = 6
          if (d / b) < (f / a) then d = d / b
@@ -14,5 +14,9 @@ unixkcd: a = 1: b = 2: c = 3: d = 4: e = 4: f = 6
          if (a = = b) | | (c = = d) then a = a + b
          c = c + d
          output (b * c) * (f + d) / a / 2 * d - c + e ^ (b - 2 * d)
+
+xuxinwen: do we find what it outputs
+
+BigChonk: yeah
 
 END MESSAGES

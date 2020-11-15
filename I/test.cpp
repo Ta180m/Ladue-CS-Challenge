@@ -1,12 +1,9 @@
-#include <iostream>
-#include <algorithm>
-#include <string>
-#include <sstream>
+#include <bits/stdc++.h>
 
 int mode(int v[], int n) {
     int ret = 0, cnt = 0;
     for (int i = 0; i < n; ++i)
-        if (std::count(v, v+n, v[i]) > cnt) ret = v[i];
+        if (std::count(v, v+n, v[i]) > cnt) ret = v[i], cnt = std::count(v, v+n, v[i]);
     return ret;
 }
 
@@ -69,8 +66,8 @@ bool test() {
         
         std::cout << "Round 2" << std::endl;
         int b = testb();
-        if (b) std::cout << "BigChonk survived!" << std::endl;
-        else std::cout << "BigChonk died!" << std::endl;
+        if (b == 0 || (b & (b-1))) std::cout << "BigChonk died!" << std::endl;
+        else std::cout << "BigChonk survived!" << std::endl;
         std::cout << "You lost!" << std::endl;
         return 0;
     }
@@ -80,8 +77,8 @@ bool test() {
         
         std::cout << "Round 2" << std::endl;
         int a = testa();
-        if (a) std::cout << "unixkcd survived!" << std::endl;
-        else std::cout << "unixkcd died!" << std::endl;
+        if (a == 0 || (a & (a-1))) std::cout << "unixkcd died!" << std::endl;
+        else std::cout << "unixkcd survived!" << std::endl;
         std::cout << "You lost!" << std::endl;
         return 0;
     }
@@ -101,6 +98,16 @@ bool test() {
         for (int i = 1; i <= 9; ++i)
             if (p[i] == 0) np[i] = ((1&(a>>i))<<1)+(1&(b>>i));
         
+        if (std::count(p, p+10, 1) != 2 || std::count(p, p+10, 2) != 2 || std::count(p, p+10, 3) != 1) {
+            std::cout << "You lost!" << std::endl;
+            return 0;
+        }
+
+        if (std::count(np, np+10, -1) != 6) {
+            std::cout << "You lost!" << std::endl;
+            return 0;
+        }
+
         for (int i = 0; i < 4; ++i) {
             if (std::count(np, np+10, i) != 1 || p[std::find(np, np+10, i)-np] != 0) {
                 std::cout << "You lost!" << std::endl;
@@ -125,7 +132,7 @@ bool test() {
 }
 
 void done() {
-    std::cout << "You completed problem I! The answer is \"toohard\"." << std::endl;
+    std::cout << "You completed problem I! Use \"toohard\" to unlock the zip." << std::endl;
 }
 
 int main() {
