@@ -1,0 +1,32 @@
+Problem,Idea,File,Answer,Hint
+"A
+Easy",ACSL Computer Number Systems: Find the number of integers between 1 and 64 inclusive that have more ones than zeros in their binary representation.,A.txt with the problem,36,"E: Looks familiar, but something's off..."
+"B
+Easy","ACSL Recursive functions:
+            /  0                 if n = 1
+f(n) = {  f(3n+1)+1  if n is odd
+            \  f(n/2)+1    if n is even
+Find f(27)",B.txt with the problem,111,D: Prime indices are the key...
+"C
+Easy",ACSL What does this program do?,C.txt with a pseudocode program,5,F: Find the answer
+"D
+Medium",The code is hidden in the prime indices of a long string. Write a program to find it.,D.txt with a long string,robertrcoveyou,I: https://pastebin.com/raw/ydJvMwTM
+"E
+Medium","You are given the code for 2048, but something's not right. Some of the variable names are changed. Using a diff tool, you can identify which characters were added.",E.py with the modified code for 2048,fixchecklost,G: Open it with a text editor and get a big-picture view of it
+"F
+Medium","You are given a link to a website that contains very long source code. Inspect element or view source, then Ctrl-F to find the string ""Answer""",F.txt with the link https://ta180m.github.io/Ladue-CS-Challenge/,javascript,"H: X Y means the Xth lexicographically largest permuation of [1,2...Y]"
+"G
+Hard","You are given a .bin file. However, it's not actually a binary file. If you open it with a text editor, you'll get a bunch of ASCII ones and zeros. If you zoom out far enough or make the font size very small, the ones form a message",G.bin,helloworld,J: http://www.nmichaels.org/rsa.py
+"H
+Hard","Find the 100000th permutation of [1,2...9]. You can write a program to find the answer.","H.txt with two numbers, 100000 9",358926471,"J: Public modulus: d94d889e88853dd89769a18015a0a2e6bf82bf356fe14f251fb4f5e2df0d9f9a94a68a30c428b39e
+3362fb3779a497eceaea37100f264d7fb9fb1a97fbf621133de55fdcb9b1ad0d7a31b379216d7925
+2f5c527b9bc63d83d4ecf4d1d45cbf843e8474babc655e9bb6799cba77a47eafa838296474afc24b
+eb9c825b73ebf549"
+"I
+Hard",A logic puzzle,I.txt with the link https://repl.it/@Ta180m/I#main.cpp,toohard,"J: Public exponent: 10001
+Private exponent: 47b9cfde843176b88741d68cf096952e950813151058ce46f2b048791a26e507a1095793c12bae1e
+09d82213ad9326928cf7c2350acb19c98f19d32d577d666cd7bb8b2b5ba629d25ccf72a5ceb8a8da
+038906c84dcdb1fe677dffb2c029fd8926318eede1b58272af22bda5c5232be066839398e42f5352
+df58848adad11a1"
+"J
+Final Problem","Solve a RSA cipher using clues from G, H, I",J.txt with ciphertext,1.5707963267948966,Congratulations on solving problem J! There will be prizes! 
